@@ -30,4 +30,13 @@ public class EmployeePayrollController {
     public String deleteEmployee(@PathVariable("id") Long id) {
         return "Employee with ID " + id + " deleted.";
     }
+    @PatchMapping("/updateSalary/{id}")
+    public String updateEmployeeSalary(@PathVariable("id") Long id, @RequestBody String salary) {
+        return "Employee with ID " + id + " updated salary to: " + salary;
+    }
+
+    @GetMapping("/count")
+    public String getEmployeeCount() {
+        return "Returning total count of employees!";
+    }
 }
