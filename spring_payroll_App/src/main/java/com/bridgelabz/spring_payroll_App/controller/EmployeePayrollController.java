@@ -1,10 +1,17 @@
 package com.bridgelabz.spring_payroll_App.controller;
 
+import com.bridgelabz.spring_payroll_App.service.EmployeePayrollService;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeePayrollController {
+     
+	
+	@Autowired
+    private EmployeePayrollService employeeService;
 
     @GetMapping("/")
     public String getAllEmployees() {
@@ -30,13 +37,5 @@ public class EmployeePayrollController {
     public String deleteEmployee(@PathVariable("id") Long id) {
         return "Employee with ID " + id + " deleted.";
     }
-    @PatchMapping("/updateSalary/{id}")
-    public String updateEmployeeSalary(@PathVariable("id") Long id, @RequestBody String salary) {
-        return "Employee with ID " + id + " updated salary to: " + salary;
-    }
-
-    @GetMapping("/count")
-    public String getEmployeeCount() {
-        return "Returning total count of employees!";
-    }
+    
 }
