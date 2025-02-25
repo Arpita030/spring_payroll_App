@@ -1,41 +1,50 @@
 package com.bridgelabz.spring_payroll_App.controller;
 
-import com.bridgelabz.spring_payroll_App.service.EmployeePayrollService;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.beans.factory.annotation.Autowired;
 
+
+import com.bridgelabz.spring_payroll_App.dto.EmployeeDTO;
+import com.bridgelabz.spring_payroll_App.model.Employee;
+import com.bridgelabz.spring_payroll_App.service.EmployeePayrollService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeePayrollController {
-     
-	
-	@Autowired
-    private EmployeePayrollService employeeService;
+
+    @Autowired
+    private EmployeePayrollService employeePayrollService;  
+
+    @PostMapping("/create")
+    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        return employeePayrollService.createEmployee(employeeDTO);
+    }
 
     @GetMapping("/")
-    public String getAllEmployees() {
-        return "Getting all employees!";
+    public List<Employee> getAllEmployees() {
+        return employeePayrollService.getAllEmployees();
     }
 
     @GetMapping("/get/{id}")
-    public String getEmployeeById(@PathVariable("id") Long id) {
-        return "Getting employee with ID: " + id;
-    }
-
-    @PostMapping("/create")
-    public String createEmployee(@RequestBody String employee) {
-        return "Employee created: " + employee;
-    }
-
-    @PutMapping("/update")
-    public String updateEmployee(@RequestBody String employee) {
-        return "Employee updated with details: " + employee;
-    }
-
-    @DeleteMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable("id") Long id) {
-        return "Employee with ID " + id + " deleted.";
+    public Employee getEmployeeById(@PathVariable("id") Long id) {
+        return employeePayrollService.getEmployeeById(id);
     }
     
+    @PutMapping("/update/{id}")
+    public Employee updateEmployee(@PathVariable("id") Long id, @RequestBody EmployeeDTO employeeDTO) {
+        return employeePayrollService.updateEmployee(id, employeeDTO);
+    }
+    
+    @DeleteMapping("/delete/{id}")
+    public String deleteEmployee(@PathVariable("id") Long id) {
+        boolean isDeleted = employeePayrollService.deleteEmployee(id);
+        if(isDeleted) {
+        	return "Employee deleted  Successfully";
+        }
+        return "Employee not found";
+    }
+
 }
