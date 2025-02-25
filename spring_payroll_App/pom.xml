@@ -50,6 +50,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+    <!-- Lombok for Auto-Generating Getters, Setters, Constructors, etc. -->
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+          <!-- Use the latest version -->
+        <scope>provided</scope>
+    </dependency>
+    
 	</dependencies>
 
 	<build>

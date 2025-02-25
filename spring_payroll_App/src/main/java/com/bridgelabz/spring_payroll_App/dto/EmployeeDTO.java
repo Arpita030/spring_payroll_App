@@ -1,32 +1,16 @@
 package com.bridgelabz.spring_payroll_App.dto;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data  // Generates Getters, Setters, toString, equals, and hashCode
 public class EmployeeDTO {
     private String name;
     private double salary;
-
-    // Constructors
-    public EmployeeDTO() {}
-
-    public EmployeeDTO(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    // Getters and Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
+    
 }
