@@ -1,28 +1,27 @@
 package com.bridgelabz.spring_payroll_App.model;
 
 
+
 public class Employee {
-    private Long id;
+	
+    private static long idCounter=1;
+	private long id;
     private String name;
     private double salary;
 
-    // Constructors
-    public Employee() {}
-
-    public Employee(Long id, String name, double salary) {
-        this.id = id;
-        this.name = name;
+    public Employee(String name, double salary) {
+        this.id=idCounter;
+        idCounter++;
+    	this.name = name;
         this.salary = salary;
     }
-
-    // Getters and Setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    
+    public long getId(){
+    	return id;
+    	}
+    public void setId(long id){
+    	this.id = id; 
+    	}
 
     public String getName() {
         return name;
