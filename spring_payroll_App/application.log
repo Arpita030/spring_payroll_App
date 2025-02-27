@@ -10,9 +10,18 @@
 2025-02-27T11:15:27.618+05:30  WARN 8508 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
 2025-02-27T11:15:27.698+05:30  INFO 8508 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 1.319 seconds (process running for 1.83)
 2025-02-27T11:15:27.699+05:30  INFO 8508 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee payroll App started
+<<<<<<< HEAD
 2025-02-27T16:16:26.463+05:30  INFO 10432 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 10432 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
 2025-02-27T16:16:26.464+05:30 DEBUG 10432 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
 2025-02-27T16:16:26.464+05:30  INFO 10432 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
 2025-02-27T16:16:26.776+05:30  WARN 10432 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
 2025-02-27T16:16:26.807+05:30  INFO 10432 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.386 seconds (process running for 1019.991)
 2025-02-27T16:16:26.810+05:30  INFO 10432 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee payroll App started
+=======
+2025-02-27T15:00:53.977+05:30  INFO 15200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15200 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-27T15:00:53.980+05:30 DEBUG 15200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-27T15:00:53.981+05:30  INFO 15200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-02-27T15:00:55.707+05:30  WARN 15200 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-27T15:00:55.858+05:30  INFO 15200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.38 seconds (process running for 3.258)
+2025-02-27T15:00:55.863+05:30  INFO 15200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee payroll App started
+>>>>>>> UC8_Dev_And_prod
