@@ -12,16 +12,22 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.bridgelabz.spring_payroll_App.dto.ResponseDTO;
 
-
 @ControllerAdvice
 public class EmployeePayrollExceptionalHandler {
-
+        
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException exception){
 		List<ObjectError> errorList=exception.getBindingResult().getAllErrors();
 		List<String> errMesg=errorList.stream().map(objErr->objErr.getDefaultMessage()).collect(Collectors.toList());
 		
 		ResponseDTO responseDTO=new ResponseDTO("Exception while processing REST Request",errMesg);
+		return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.BAD_REQUEST);
+	}
+	
+	
+	@ExceptionHandler(EmployeeNotFoundException.class)
+	public ResponseEntity<ResponseDTO> handleEmployeePayrollException(EmployeeNotFoundException exception){
+		ResponseDTO responseDTO=new ResponseDTO("Exception while processing REST Request",exception.getMessage());
 		return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.BAD_REQUEST);
 	}
 }

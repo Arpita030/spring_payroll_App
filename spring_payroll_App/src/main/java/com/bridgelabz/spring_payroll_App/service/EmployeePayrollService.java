@@ -4,6 +4,7 @@ package com.bridgelabz.spring_payroll_App.service;
 
 
 import com.bridgelabz.spring_payroll_App.dto.EmployeeDTO;
+import com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException;
 import com.bridgelabz.spring_payroll_App.model.Employee;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +30,7 @@ public class EmployeePayrollService {
         return employeeList.stream()
             .filter(employee -> employee.getId() == id)
             .findFirst()
-            .orElse(null);
+            .orElseThrow(()->new EmployeeNotFoundException("Employee Not Found"));
     }
 
     public Employee updateEmployee(Long id, EmployeeDTO employeeDTO) {

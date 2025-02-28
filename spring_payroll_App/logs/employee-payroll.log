@@ -61,3 +61,97 @@
 2025-02-28T16:57:54.233+05:30  INFO 17260 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.385 seconds (process running for 3.291)
 2025-02-28T16:57:54.237+05:30  INFO 17260 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
 2025-02-28T16:57:54.238+05:30  INFO 17260 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T18:38:03.390+05:30  INFO 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 21844 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-28T18:38:03.396+05:30 DEBUG 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T18:38:03.397+05:30  INFO 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T18:38:05.474+05:30  WARN 21844 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28T18:38:05.640+05:30  INFO 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.929 seconds (process running for 4.19)
+2025-02-28T18:38:05.645+05:30  INFO 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-02-28T18:38:05.647+05:30  INFO 21844 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T19:41:25.740+05:30  INFO 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 10016 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-28T19:41:25.745+05:30 DEBUG 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T19:41:25.747+05:30  INFO 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T19:41:27.593+05:30  WARN 10016 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28T19:41:27.748+05:30  INFO 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.621 seconds (process running for 3.59)
+2025-02-28T19:41:27.753+05:30  INFO 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-02-28T19:41:27.755+05:30  INFO 10016 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T19:42:14.628+05:30  WARN 10016 --- [spring_payroll_App] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.spring_payroll_App.model.Employee com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'salary': rejected value [60.0]; codes [Min.employeeDTO.salary,Min.salary,Min.double,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.salary,salary]; arguments []; default message [salary],500]; default message [Min Wage should be more than 500]] ]
+2025-02-28T19:42:15.629+05:30  WARN 10016 --- [spring_payroll_App] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.spring_payroll_App.model.Employee com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'salary': rejected value [60.0]; codes [Min.employeeDTO.salary,Min.salary,Min.double,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.salary,salary]; arguments []; default message [salary],500]; default message [Min Wage should be more than 500]] ]
+2025-02-28T20:04:07.652+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 17536 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-28T20:04:07.659+05:30 DEBUG 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T20:04:07.661+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T20:04:09.929+05:30  WARN 17536 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28T20:04:10.135+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.247 seconds (process running for 4.546)
+2025-02-28T20:04:10.141+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-02-28T20:04:10.144+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T20:04:44.224+05:30 ERROR 17536 --- [spring_payroll_App] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException: Employee Not Found] with root cause
+
+com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException: Employee Not Found
+	at com.bridgelabz.spring_payroll_App.service.EmployeePayrollService.lambda$1(EmployeePayrollService.java:33) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.bridgelabz.spring_payroll_App.service.EmployeePayrollService.getEmployeeById(EmployeePayrollService.java:33) ~[classes/:na]
+	at com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.getEmployeeById(EmployeePayrollController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-02-28T20:06:59.400+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 17536 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-28T20:06:59.401+05:30 DEBUG 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T20:06:59.401+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T20:06:59.944+05:30  WARN 17536 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28T20:06:59.998+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.651 seconds (process running for 174.409)
+2025-02-28T20:07:00.001+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-02-28T20:07:00.002+05:30  INFO 17536 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T20:07:07.925+05:30  INFO 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 22200 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-02-28T20:07:07.930+05:30 DEBUG 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-28T20:07:07.932+05:30  INFO 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-02-28T20:07:10.044+05:30  WARN 22200 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-02-28T20:07:10.239+05:30  INFO 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.994 seconds (process running for 4.159)
+2025-02-28T20:07:10.246+05:30  INFO 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-02-28T20:07:10.248+05:30  INFO 22200 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-02-28T20:07:24.031+05:30  WARN 22200 --- [spring_payroll_App] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException: Employee Not Found]
