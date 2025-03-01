@@ -1,18 +1,18 @@
 package com.bridgelabz.spring_payroll_App.model;
+import java.time.LocalDate;
 import java.util.List;
 
 import com.bridgelabz.spring_payroll_App.dto.EmployeeDTO;
 
 import lombok.Data;
 
-
 public @Data class Employee {
 	
-    private int employeeId;
+    private long employeeId;
     private String name;
     private long salary;
     private String gender;
-    private String startDate;
+    private LocalDate startDate;
     private String note;
     private String profilePic;
     private List<String> departments;
@@ -22,13 +22,13 @@ public @Data class Employee {
     
     public Employee(int empId,EmployeeDTO employeedto) {
         this.employeeId=empId;
-        this.name=employeedto.name;
-        this.salary=employeedto.salary;
-        this.gender=employeedto.gender;
-        this.note=employeedto.note;
-        this.startDate=employeedto.startDate;
-        this.profilePic=employeedto.profilePic;
-        this.departments=employeedto.department;
+        this.name=employeedto.getName();
+        this.salary=employeedto.getSalary();
+        this.gender=employeedto.getGender();
+        this.note=employeedto.getNote();
+        this.startDate=employeedto.getStartDate();
+        this.profilePic=employeedto.getProfilePic();
+        this.departments=employeedto.getDepartments();
     }
     
     

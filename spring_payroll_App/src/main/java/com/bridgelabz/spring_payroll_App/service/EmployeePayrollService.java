@@ -6,11 +6,14 @@ package com.bridgelabz.spring_payroll_App.service;
 import com.bridgelabz.spring_payroll_App.dto.EmployeeDTO;
 import com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException;
 import com.bridgelabz.spring_payroll_App.model.Employee;
+
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Slf4j
 @Service
 public class EmployeePayrollService {
 
@@ -21,9 +24,9 @@ public class EmployeePayrollService {
     public Employee createEmployee(EmployeeDTO employeeDTO) {
         Employee newEmployee = new Employee(employeeIdCounter++, employeeDTO);
         employeeList.add(newEmployee);
+        log.info("Created Employee: {}", newEmployee);
         return newEmployee;
     }
-
     public List<Employee> getAllEmployees() {
         return employeeList;
     }
@@ -36,19 +39,24 @@ public class EmployeePayrollService {
     }
 
     public Employee updateEmployee(long id, EmployeeDTO employeeDTO) {
-        Employee employee = getEmployeeById(id);
-        if (employee != null) {
-            employee.setName(employeeDTO.getName());
-            employee.setSalary(employeeDTO.getSalary());
-            employee.setGender(employeeDTO.getGender());
-            employee.setStartDate(employeeDTO.getStartDate());
-            employee.setNote(employeeDTO.getNote());
-            employee.setProfilePic(employeeDTO.getProfilePic());
-            employee.setDepartments(employeeDTO.getDepartment());
-        }
+        Employee employee = getEmployeeById(id); 
+
+        employee.setName(employeeDTO.getName());
+        employee.setSalary(employeeDTO.getSalary());
+        employee.setGender(employeeDTO.getGender());
+        employee.setStartDate(employeeDTO.getStartDate());
+        employee.setNote(employeeDTO.getNote());
+        employee.setProfilePic(employeeDTO.getProfilePic());
+        employee.setDepartments(employeeDTO.getDepartments());
+
+        log.info("Updated Employee: {}", employee);
         return employee;
     }
-    public boolean deleteEmployee(Long id) {
-        return employeeList.removeIf(employee -> employee.getEmployeeId() == id);
+    public void deleteEmployee(long id) {
+        boolean removed = employeeList.removeIf(employee -> employee.getEmployeeId() == id);
+        if (!removed) {
+            throw new EmployeeNotFoundException("Cannot delete. Employee Not Found with ID: " + id);
+        }
+        log.info("Deleted Employee with ID: {}", id);
     }
 }
