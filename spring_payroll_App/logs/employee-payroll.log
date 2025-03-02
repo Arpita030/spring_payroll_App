@@ -6,3 +6,163 @@
 2025-03-01T10:33:00.666+05:30  INFO 12060 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
 2025-03-01T10:33:00.668+05:30  INFO 12060 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
 2025-03-01T10:34:13.957+05:30  WARN 12060 --- [spring_payroll_App] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.bridgelabz.spring_payroll_App.model.Employee com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [J ]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@79f07a6d,^[A-Z]{1}[a-zA-Z\s]{2,}$]; default message [Employee name Invalid]] ]
+2025-03-02T13:11:36.008+05:30  INFO 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 2740 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:11:36.014+05:30 DEBUG 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:11:36.016+05:30  INFO 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:11:37.920+05:30  WARN 2740 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-02T13:11:38.059+05:30  INFO 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.725 seconds (process running for 3.838)
+2025-03-02T13:11:38.065+05:30  INFO 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-03-02T13:11:38.067+05:30  INFO 2740 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-03-02T13:13:26.550+05:30  INFO 2740 --- [spring_payroll_App] [http-nio-8080-exec-1] c.b.s.service.EmployeePayrollService     : Created Employee: Employee(employeeId=1, name=John, salary=2000, gender=male, startDate=2023-01-01, note=New Employee, profilePic=profilePicUrl, departments=[IT, HR])
+2025-03-02T13:15:52.679+05:30  INFO 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 15868 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:15:52.685+05:30 DEBUG 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:15:52.687+05:30  INFO 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:15:54.458+05:30  WARN 15868 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-02T13:15:54.590+05:30  INFO 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.521 seconds (process running for 3.592)
+2025-03-02T13:15:54.594+05:30  INFO 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-03-02T13:15:54.595+05:30  INFO 15868 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-03-02T13:16:24.856+05:30  WARN 15868 --- [spring_payroll_App] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO) with 2 errors: [Field error in object 'employeeDTO' on field 'name': rejected value [arpita goutam]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@50ce04b6,^[A-Z]{1}[a-zA-Z\s]{2,}$]; default message [Employee name must start with uppercase and have at least 3 characters]] [Field error in object 'employeeDTO' on field 'gender': rejected value [Arpita]; codes [Pattern.employeeDTO.gender,Pattern.gender,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@50ce04b6,^(male|female)$]; default message [Gender must be either 'male' or 'female']] ]
+2025-03-02T13:16:33.394+05:30  WARN 15868 --- [spring_payroll_App] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'gender': rejected value [Arpita]; codes [Pattern.employeeDTO.gender,Pattern.gender,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.gender,gender]; arguments []; default message [gender],[Ljakarta.validation.constraints.Pattern$Flag;@50ce04b6,^(male|female)$]; default message [Gender must be either 'male' or 'female']] ]
+2025-03-02T13:16:47.485+05:30  INFO 15868 --- [spring_payroll_App] [http-nio-8080-exec-6] c.b.s.service.EmployeePayrollService     : Created Employee: Employee(employeeId=1, name=Arpita goutam, salary=2000, gender=female, startDate=2023-01-01, note=New Employee, profilePic=profilePicUrl, departments=[IT, HR])
+2025-03-02T13:32:22.623+05:30  INFO 19724 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 19724 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:32:22.627+05:30 DEBUG 19724 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:32:22.628+05:30  INFO 19724 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:32:23.638+05:30  WARN 19724 --- [spring_payroll_App] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeePayrollController': Unsatisfied dependency expressed through field 'employeePayrollService': Error creating bean with name 'employeePayrollService' defined in file [D:\spring_payroll_App\spring_payroll_App\target\classes\com\bridgelabz\spring_payroll_App\service\EmployeePayrollService.class]: Failed to instantiate [com.bridgelabz.spring_payroll_App.service.EmployeePayrollService]: Constructor threw exception
+2025-03-02T13:32:23.673+05:30 ERROR 19724 --- [spring_payroll_App] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeePayrollController': Unsatisfied dependency expressed through field 'employeePayrollService': Error creating bean with name 'employeePayrollService' defined in file [D:\spring_payroll_App\spring_payroll_App\target\classes\com\bridgelabz\spring_payroll_App\service\EmployeePayrollService.class]: Failed to instantiate [com.bridgelabz.spring_payroll_App.service.EmployeePayrollService]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.bridgelabz.spring_payroll_App.EmployeePayrollAppApplication.main(EmployeePayrollAppApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'employeePayrollService' defined in file [D:\spring_payroll_App\spring_payroll_App\target\classes\com\bridgelabz\spring_payroll_App\service\EmployeePayrollService.class]: Failed to instantiate [com.bridgelabz.spring_payroll_App.service.EmployeePayrollService]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1343) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1228) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.spring_payroll_App.service.EmployeePayrollService]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 35 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "package", import expected
+	The method save(Employee) is undefined for the type EmployeePayrollRepository
+	The method orElseThrow(Supplier<? extends X>) in the type Optional<Employee> is not applicable for the arguments (() -> {})
+	EmployeePayrollException cannot be resolved to a type
+	EmployeePayrollException cannot be resolved to a type
+
+	at com.bridgelabz.spring_payroll_App.service.EmployeePayrollService.<init>(EmployeePayrollService.java:4) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 37 common frames omitted
+
+2025-03-02T13:33:30.770+05:30  INFO 22816 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 22816 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:33:30.773+05:30 DEBUG 22816 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:33:30.774+05:30  INFO 22816 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:33:31.671+05:30  WARN 22816 --- [spring_payroll_App] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeePayrollController': Unsatisfied dependency expressed through field 'employeePayrollService': Error creating bean with name 'employeePayrollService': Unsatisfied dependency expressed through field 'employeeRepository': No qualifying bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-03-02T13:33:31.705+05:30 ERROR 22816 --- [spring_payroll_App] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeRepository in com.bridgelabz.spring_payroll_App.service.EmployeePayrollService required a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' in your configuration.
+
+2025-03-02T13:33:36.919+05:30  INFO 18372 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18372 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:33:36.922+05:30 DEBUG 18372 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:33:36.924+05:30  INFO 18372 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:33:37.805+05:30  WARN 18372 --- [spring_payroll_App] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeePayrollController': Unsatisfied dependency expressed through field 'employeePayrollService': Error creating bean with name 'employeePayrollService': Unsatisfied dependency expressed through field 'employeeRepository': No qualifying bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-03-02T13:33:37.840+05:30 ERROR 18372 --- [spring_payroll_App] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeRepository in com.bridgelabz.spring_payroll_App.service.EmployeePayrollService required a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' in your configuration.
+
+2025-03-02T13:36:23.865+05:30  INFO 16168 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 16168 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:36:23.870+05:30 DEBUG 16168 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:36:23.871+05:30  INFO 16168 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:36:26.526+05:30  WARN 16168 --- [spring_payroll_App] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeePayrollController': Unsatisfied dependency expressed through field 'employeePayrollService': Error creating bean with name 'employeePayrollService': Unsatisfied dependency expressed through field 'employeeRepository': No qualifying bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-03-02T13:36:26.604+05:30 ERROR 16168 --- [spring_payroll_App] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field employeeRepository in com.bridgelabz.spring_payroll_App.service.EmployeePayrollService required a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository' in your configuration.
+
+2025-03-02T13:37:03.108+05:30  INFO 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 2676 (D:\spring_payroll_App\spring_payroll_App\target\classes started by Hp in D:\spring_payroll_App\spring_payroll_App)
+2025-03-02T13:37:03.111+05:30 DEBUG 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-02T13:37:03.112+05:30  INFO 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : The following 1 profile is active: "dev"
+2025-03-02T13:37:06.317+05:30  WARN 2676 --- [spring_payroll_App] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-02T13:37:06.540+05:30  WARN 2676 --- [spring_payroll_App] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-02T13:37:06.692+05:30  INFO 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 3.93 seconds (process running for 4.596)
+2025-03-02T13:37:06.695+05:30  INFO 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll App Started in null Environment
+2025-03-02T13:37:06.697+05:30  INFO 2676 --- [spring_payroll_App] [restartedMain] c.b.s.EmployeePayrollAppApplication      : Employee Payroll DB User is payrolluser
+2025-03-02T13:37:22.962+05:30 DEBUG 2676 --- [spring_payroll_App] [http-nio-8080-exec-2] c.b.s.service.EmployeePayrollService     : Emp Data: Employee(employeeId=0, name=Arpita goutam, salary=2000, gender=female, startDate=2023-01-01, note=New Employee, profilePic=profilePicUrl, departments=[IT, HR])
+2025-03-02T13:37:34.246+05:30  WARN 2676 --- [spring_payroll_App] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.bridgelabz.spring_payroll_App.controller.EmployeePayrollController.createEmployee(com.bridgelabz.spring_payroll_App.dto.EmployeeDTO): [Field error in object 'employeeDTO' on field 'name': rejected value [hdhghhg goutam]; codes [Pattern.employeeDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employeeDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@3f1b9fd0,^[A-Z]{1}[a-zA-Z\s]{2,}$]; default message [Employee name must start with uppercase and have at least 3 characters]] ]
+2025-03-02T13:37:42.587+05:30 DEBUG 2676 --- [spring_payroll_App] [http-nio-8080-exec-5] c.b.s.service.EmployeePayrollService     : Emp Data: Employee(employeeId=0, name=Tdhghhg goutam, salary=20786800, gender=female, startDate=2023-01-01, note=New Employee, profilePic=profilePicUrl, departments=[IT, HR])
