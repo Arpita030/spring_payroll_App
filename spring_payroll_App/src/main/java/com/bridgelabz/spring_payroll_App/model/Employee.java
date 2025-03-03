@@ -17,16 +17,9 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 
-@Entity
-@Table(name="employee_payroll")
 public @Data class Employee {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="employee_id")
-    private int employeeId;
-	
-	@Column(name="name")
+    private long employeeId;
     private String name;
     private long salary;
     private String gender;
@@ -43,6 +36,7 @@ public @Data class Employee {
 
     public Employee() {}
     
+
     public Employee(EmployeeDTO employeedto) {
     	this.updateEmployee(employeedto);
     }
@@ -56,6 +50,16 @@ public @Data class Employee {
         this.profilePic=employeedto.profilePic;
         this.departments=employeedto.departments;
     }
-    
+    public Employee(int empId,EmployeeDTO employeedto) {
+        this.employeeId=empId;
+        this.name=employeedto.getName();
+        this.salary=employeedto.getSalary();
+        this.gender=employeedto.getGender();
+        this.note=employeedto.getNote();
+        this.startDate=employeedto.getStartDate();
+        this.profilePic=employeedto.getProfilePic();
+        this.departments=employeedto.getDepartments();
+    }
+   
     
 }

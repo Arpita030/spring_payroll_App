@@ -5,11 +5,16 @@ package com.bridgelabz.spring_payroll_App.service;
 import com.bridgelabz.spring_payroll_App.dto.EmployeeDTO;
 import com.bridgelabz.spring_payroll_App.exceptions.EmployeeNotFoundException;
 import com.bridgelabz.spring_payroll_App.model.Employee;
+
 import com.bridgelabz.spring_payroll_App.repository.EmployeePayrollRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
+
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -28,9 +33,10 @@ public class EmployeePayrollService implements IEmployeePayrollService{
         newEmployee=new Employee(employeeDTO);
         log.debug("Emp Data: "+newEmployee.toString());
         employeeList.add(newEmployee);
-        return employeeRepository.save(newEmployee);
-    }
 
+        return employeeRepository.save(newEmployee);
+
+    }
     public List<Employee> getAllEmployees() {
         return employeeList;
     }

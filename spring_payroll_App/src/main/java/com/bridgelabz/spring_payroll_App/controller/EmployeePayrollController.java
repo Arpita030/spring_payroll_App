@@ -22,16 +22,12 @@ public class EmployeePayrollController {
     @Autowired
     private EmployeePayrollService employeePayrollService;  
 
-
     @PostMapping("/create")
     public ResponseEntity<?> createEmployee(@Valid @RequestBody EmployeeDTO employeeDTO) {
         System.out.println("Received Employee DTO: " + employeeDTO); // Debugging line
         Employee employee = employeePayrollService.createEmployee(employeeDTO);
         return new ResponseEntity<>(employee, HttpStatus.CREATED);
     }
-
-
-
 
     @GetMapping("/")
     public List<Employee> getAllEmployees() {
